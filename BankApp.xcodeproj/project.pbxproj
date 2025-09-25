@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		7DCB1AA32E57988100ED88D5 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 7DCB1AA22E57988100ED88D5 /* IQKeyboardManagerSwift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		7DCB1A3A2E53716F00ED88D5 /* BankApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BankApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -15,6 +19,7 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
+				Modules/Converter/Views/ConverterView.swift,
 			);
 			target = 7DCB1A392E53716F00ED88D5 /* BankApp */;
 		};
@@ -36,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DCB1AA32E57988100ED88D5 /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +84,7 @@
 			);
 			name = BankApp;
 			packageProductDependencies = (
+				7DCB1AA22E57988100ED88D5 /* IQKeyboardManagerSwift */,
 			);
 			productName = BankApp;
 			productReference = 7DCB1A3A2E53716F00ED88D5 /* BankApp.app */;
@@ -107,6 +114,9 @@
 			);
 			mainGroup = 7DCB1A312E53716F00ED88D5;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				7DCB1AA12E57988100ED88D5 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 7DCB1A3B2E53716F00ED88D5 /* Products */;
 			projectDirPath = "";
@@ -148,9 +158,10 @@
 				DEVELOPMENT_TEAM = UB79SL79FA;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BankApp/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "Privacy - Location When In Use Usage Description";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Нужен доступ к вашей геопозиции, чтобы показать ближайшие банкоматы";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -176,9 +187,10 @@
 				DEVELOPMENT_TEAM = UB79SL79FA;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BankApp/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "Privacy - Location When In Use Usage Description";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Нужен доступ к вашей геопозиции, чтобы показать ближайшие банкоматы";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -335,6 +347,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7DCB1AA12E57988100ED88D5 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7DCB1AA22E57988100ED88D5 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7DCB1AA12E57988100ED88D5 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7DCB1A322E53716F00ED88D5 /* Project object */;
 }
