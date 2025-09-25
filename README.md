@@ -29,6 +29,7 @@ BankApp (demo) — iOS (Swift / UIKit)
 Архитектура
 
 Держу всё на простом MVC (местами MVVM). Сеть/данные вынес в «провайдеры», часто переиспользуемые куски — в отдельные вью/утилиты.
+
 ![IMAGE 2025-09-25 19:07:47](https://github.com/user-attachments/assets/eeb48720-1738-4093-8e5b-c4435f05a738)
 ![IMAGE 2025-09-25 19:07:52](https://github.com/user-attachments/assets/83fdbea4-b807-4942-9f7a-c3bf98bb2570)
 ![IMAGE 2025-09-25 19:07:56](https://github.com/user-attachments/assets/9cd2f069-af68-4683-886a-01c74d272c9c)
